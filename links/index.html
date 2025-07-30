@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Je chante</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        background-image: url("../imgs/inner-unite-bg.png");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        max-width: 960px;
+        min-width: 60%;
+        margin: 50px auto;
+
+        padding: 2rem;
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+      .video-item {
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .video-item:hover {
+        transform: scale(1.05);
+      }
+      .video-item img {
+        width: 100%;
+        border-radius: 6px;
+      }
+      .video-title {
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+      }
+      .back-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+      }
+      .back-btn img {
+        width: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-grid">
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=VhBC_0GG4yQ" target="_blank">
+            <img
+              src="https://img.youtube.com/vi/VhBC_0GG4yQ/hqdefault.jpg"
+              alt="Savez-vous planter les choux ?" />
+          </a>
+          <div class="video-title">Savez-vous planter les choux ?</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=WCwKFZQWzCc" target="_blank">
+            <img
+              src="https://img.youtube.com/vi/WCwKFZQWzCc/hqdefault.jpg"
+              alt="Tourne tourne petit moulin" />
+          </a>
+          <div class="video-title">Tourne tourne petit moulin</div>
+        </div>
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=6K1p8G2C8m0" target="_blank">
+            <img
+              src="https://img.youtube.com/vi/6K1p8G2C8m0/hqdefault.jpg"
+              alt="Promenons Nous Dans Les Bois" />
+          </a>
+          <div class="video-title">Promenons Nous Dans Les Bois</div>
+        </div>
+      </div>
+    </div>
+    <a href="../index.html" class="back-btn">
+      <img src="../imgs/back.png" alt="Back" />
+    </a>
+  </body>
+</html>

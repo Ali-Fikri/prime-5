@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Livre interactif</title>
+    <meta
+      name="description"
+      content="Livre interactif pour enfants : histoires, activités et unités éducatives animées." />
+    <meta
+      name="keywords"
+      content="livre interactif, éducation enfants, activités, histoires, unités scolaires, apprentissage français" />
+    <meta name="author" content="Mohamed Tarek" />
+
+    <meta property="og:title" content="Livre interactif pour enfants" />
+    <meta
+      property="og:description"
+      content="Explorez un livre interactif avec des vidéos, des histoires et des activités ludiques pour enfants." />
+    <meta
+      property="og:image"
+      content="https://prim-jet.vercel.app/imgs/book-title.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prim-jet.vercel.app/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Livre interactif pour enfants" />
+    <meta
+      name="twitter:description"
+      content="Histoires animées, activités ludiques, et unités éducatives en français." />
+    <meta
+      name="twitter:image"
+      content="https://prim-jet.vercel.app/imgs/book-title.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Start Button -->
+    <div class="start-button" id="startScreen">
+      <img src="imgs/book-title-only.png" alt="" />
+
+      <div style="justify-items: center">
+        <p class="subtitle">Are you ready for an exciting journey?</p>
+
+        <button class="button start-btn" id="startBtn">
+          <div class="wrap">
+            <p>
+              <span>✧</span>
+              <span>✦</span>
+              Commencer
+            </p>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Intro Video -->
+    <video class="intro-video" id="introVideo" playsinline>
+      <source src="imgs/intro.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+
+    <!-- Skip Button -->
+    <button class="skip-button" id="skipButton">Passer</button>
+
+    <!-- Intro Audio -->
+    <audio id="introAudio">
+      <source src="imgs/intro.mpeg" type="audio/mpeg" />
+      Votre navigateur ne supporte pas l'audio HTML5.
+    </audio>
+
+    <!-- Main Content (Book) -->
+    <div class="container" id="mainContent">
+      <div class="sidebar">
+        <ul>
+          <li>
+            <img
+              src="imgs/book-title.png"
+              alt="Kids Image"
+              class="book-title" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="livre/sections/index.html" class="home-button"
+              >Livre d'élève</a
+            >
+          </li>
+          <li>
+            <a href="activities/page51/index.html" class="home-button"
+              >Cahier d'activité</a
+            >
+          </li>
+          <li>
+            <a href="./links/index.html" class="home-button">Je chante</a>
+          </li>
+        </ul>
+      </div>
+      <div class="design-box"></div>
+    </div>
+
+    <script>
+      const startScreen = document.getElementById("startScreen");
+      const startBtn = document.getElementById("startBtn");
+      const introVideo = document.getElementById("introVideo");
+      const introAudio = document.getElementById("introAudio");
+      const mainContent = document.getElementById("mainContent");
+      const skipButton = document.getElementById("skipButton");
+
+      let videoEnded = false;
+      let audioEnded = false;
+
+      function skipIntro() {
+        introVideo.pause();
+        introAudio.pause();
+        videoEnded = true;
+        audioEnded = true;
+        skipButton.style.display = "none";
+        tryShowBook();
+      }
+
+      function tryShowBook() {
+        if (videoEnded && audioEnded) {
+          introVideo.style.display = "none";
+          mainContent.style.display = "flex";
+          sessionStorage.setItem("videoPlayed", "true");
+        }
+      }
+
+      // If already played this session, skip intro
+      if (sessionStorage.getItem("videoPlayed")) {
+        startScreen.style.display = "none";
+        introVideo.style.display = "none";
+        mainContent.style.display = "flex";
+      }
+
+      startBtn.addEventListener("click", () => {
+        startScreen.style.display = "none";
+        introVideo.style.display = "block";
+        skipButton.style.display = "block";
+        introVideo.muted = false;
+        introVideo
+          .play()
+          .catch((err) => console.error("Video play failed:", err));
+        introAudio
+          .play()
+          .catch((err) => console.error("Audio play failed:", err));
+      });
+
+      skipButton.addEventListener("click", skipIntro);
+
+      introVideo.addEventListener("ended", () => {
+        videoEnded = true;
+        tryShowBook();
+      });
+
+      introAudio.addEventListener("ended", () => {
+        audioEnded = true;
+        tryShowBook();
+      });
+    </script>
+  </body>
+</html>
