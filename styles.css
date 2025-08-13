@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Comic Relief", sans-serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 body {
-  background: url("imgs/home-bg.png");
+  background: url("imgs/background.png");
   background-size: contain;
   background-repeat: round;
   margin: 0;
@@ -149,7 +149,7 @@ audio {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00ccff;
+  background-color: #40af49;
   transition: all 1s;
   z-index: -1;
   transform: translateX(-100%);
@@ -163,13 +163,13 @@ audio {
   -o-transform: translateX(0);
 }
 .home-button:hover {
-  border-color: #00ccff;
+  border-color: #40af49;
 }
 
 /* From Uiverse.io by marcelodolza */
 .button {
   --white: #000000;
-  --bg: #00ccff;
+  --bg: #e2302b;
   --radius: 100px;
   outline: none;
   cursor: pointer;
@@ -265,7 +265,7 @@ audio {
 
 .container {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 0 2rem;
@@ -294,18 +294,7 @@ audio {
   color: #ff7f50;
 }
 
-.design-box {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  margin-top: 10rem;
-}
-
-/* <= 1024 responsive structure */
-
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   body {
     background-size: cover;
     background-repeat: no-repeat;
