@@ -1,0 +1,46 @@
+body {
+  background-size: cover;
+}
+
+.board {
+  position: relative;
+
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 3rem 3rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+}
+
+.images-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border: 1px solid rgb(0, 179, 255);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.images-container img {
+  width: 15rem;
+  padding: 1rem;
+}
+
+@media (max-width: 990px) {
+  .board {
+    padding: 2rem 0.5rem;
+  }
+
+  .images-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .images-container img {
+    width: 10rem;
+  }
+}
