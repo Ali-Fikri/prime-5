@@ -403,6 +403,11 @@ body {
   cursor: pointer;
 }
 
+.image-size {
+  width: 100%;
+  height: auto;
+}
+
 /* Animated headers */
 .animate-characters {
   background-image: linear-gradient(

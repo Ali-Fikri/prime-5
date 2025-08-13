@@ -294,6 +294,11 @@ audio {
   color: #ff7f50;
 }
 
+.image-size {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   body {
     background-size: cover;
