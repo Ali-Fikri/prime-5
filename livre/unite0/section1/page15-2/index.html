@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unité 0 - Les gens que j’aime !</title>
+    <link rel="stylesheet" href="../../../../master.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <section class="board">
+        <div
+          class="section-title"
+          data-type="file"
+          data-audio="./sounds/title.mp3">
+          <h2 class="animate-characters">Associe :</h2>
+        </div>
+        <div class="content">
+          <div class="question">
+            <div class="row">
+              <div class="letter" data-match="1">
+                En <span class="dot"></span>
+              </div>
+
+              <div class="image" data-id="1">
+                automne <span class="dot"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="letter" data-match="3">
+                Au <span class="dot"></span>
+              </div>
+              <div class="image" data-id="1">été <span class="dot"></span></div>
+            </div>
+            <div class="row">
+              <div class="letter" data-match="1">
+                En <span class="dot"></span>
+              </div>
+              <div class="image" data-id="3">
+                printemps <span class="dot"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="letter" data-match="1">
+                En <span class="dot"></span>
+              </div>
+              <div class="image" data-id="1">
+                hiver <span class="dot"></span>
+              </div>
+            </div>
+            <svg id="svg">
+              <defs>
+                <marker
+                  id="arrow"
+                  markerWidth="10"
+                  markerHeight="10"
+                  refX="6"
+                  refY="3"
+                  orient="auto">
+                  <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+                </marker>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+        <audio
+          id="clapSound"
+          src="../../../../sounds/clap.mp3"
+          preload="auto"></audio>
+        <audio
+          id="inCorrectSound"
+          src="../../../../sounds/incorrect.mp3"
+          preload="auto"></audio>
+      </section>
+
+      <footer>
+        <div class="navigation">
+          <a href="../page15-1/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../../../imgs/previous.png" alt="Previous" />
+            </div>
+          </a>
+
+          <a href="../../../../index.html" class="home-btn">
+            <img src="../../../../imgs/home.png" width="130" alt="Home" />
+          </a>
+
+          <a href="../../index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../../../imgs/next.png" alt="next" />
+            </div>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../../../../scripts/associate.js"></script>
+    <script src="../../../../master.js"></script>
+  </body>
+</html>
