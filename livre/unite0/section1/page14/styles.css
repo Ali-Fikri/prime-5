@@ -1,0 +1,45 @@
+body {
+  background-size: cover;
+}
+
+.board {
+  position: relative;
+
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 3rem 3rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.images-container img {
+  width: 20rem;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 990px) {
+  .board {
+    padding: 2rem 0.5rem;
+  }
+
+  .images-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .images-container img {
+    width: 7rem;
+  }
+
+  .dialogue {
+    font-size: 1.2rem;
+  }
+}
