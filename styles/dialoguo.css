@@ -1,0 +1,49 @@
+body {
+  background-image: url("../../../unite0/section0/page9/imgs/back.png");
+  background-size: cover;
+}
+
+.board {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+}
+
+.row {
+  margin: 2rem auto;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 3rem;
+}
+
+.text,
+.title {
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+  .board {
+    width: 95%;
+    padding: 2rem;
+    border-width: 3px;
+  }
+
+  .row {
+    gap: 1rem;
+  }
+
+  .text,
+  .title {
+    font-size: 1.2rem;
+  }
+}
