@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 3 - Quel métier !</title>
+    <link rel="stylesheet" href="../../../../master.css" />
+    <link rel="stylesheet" href="../../../../styles/drag.css" />
+    <style>
+      span {
+        color: deepskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <section class="board">
+        <div class="content">
+          <div class="question-container">
+            <div class="section-title">
+              <h2 class="animate-characters">
+                - Conjuge les verbes au présent
+              </h2>
+            </div>
+          </div>
+          <br />
+          <div class="answer-container">
+            <div class="question-item">
+              1- Ma mère
+              <input
+                type="text"
+                id="answerInput"
+                data-answer="veut"
+                placeholder="Entrez votre réponse" />
+              prendre un café. <span>(vouloir)</span>
+            </div>
+            <div class="question-item">
+              2- Je ne
+              <input
+                type="text"
+                id="answerInput"
+                data-answer="peux"
+                placeholder="Entrez votre réponse" />
+              pas travailler ici parce qu’ il y a du bruit.
+              <span>(pouvoir)</span>
+            </div>
+            <div class="question-item">
+              3- Il neige et on ne
+              <input
+                type="text"
+                id="answerInput"
+                data-answer="peut"
+                placeholder="Entrez votre réponse" />
+              pas sortir. <span>(pouvoir)</span>
+            </div>
+            <div class="question-item">
+              4- Marc et moi , nous
+              <input
+                type="text"
+                id="answerInput"
+                data-answer="voulons"
+                placeholder="Entrez votre réponse" />
+              faire les devoirs cet aprèsmidi. <span>(vouloir)</span>
+            </div>
+            <div class="question-item">
+              5- Les enfants
+              <input
+                type="text"
+                id="answerInput"
+                data-answer="peuvent"
+                placeholder="Entrez votre réponse" />
+              jouer avec les poupées. <span>(pouvoir)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <audio
+      id="clapSound"
+      src="../../../../sounds/clap.mp3"
+      preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../page46/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../../index.html" class="home-btn">
+          <img src="../../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../page47/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../../master.js"></script>
+    <script src="../../../../scripts/writeQustion.js"></script>
+  </body>
+</html>
