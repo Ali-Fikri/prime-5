@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: 50%;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  &.red span {
+    color: brown;
+  }
+  &.blue span {
+    color: deepskyblue;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box p {
+    font-size: 1.2rem;
+  }
+}
