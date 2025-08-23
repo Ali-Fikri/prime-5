@@ -1,0 +1,116 @@
+.board {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 3rem 3rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activity {
+  width: 80%;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.choices {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.choice {
+  font-size: 1.7rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.choice:hover {
+  transform: scale(1.2);
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.shake {
+  animation: shake 1s;
+  -webkit-animation: shake 1s;
+}
+
+@media (max-width: 990px) {
+  .board {
+    padding: 2rem 0.5rem;
+  }
+
+  .question {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+
+  .question p {
+    font-size: 1.5rem;
+  }
+
+  .choices {
+    flex-wrap: nowrap;
+  }
+
+  .choice {
+    font-size: 1.5rem;
+  }
+
+  .choices {
+    gap: 2rem;
+    margin-left: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
