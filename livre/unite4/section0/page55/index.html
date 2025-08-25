@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 4 - Bobo partout docteur !</title>
+    <link rel="stylesheet" href="../../../../master.css" />
+    <link rel="stylesheet" href="../../../../styles/dialoguo.css" />
+    <style>
+      span {
+        color: deeppink;
+      }
+
+      .text {
+        color: dodgerblue;
+        border: 1px solid dodgerblue;
+        border-radius: 5px;
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .ex-container {
+        width: 50%;
+        padding: 1rem;
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        background-color: rgb(255, 84, 221);
+        border: 1px solid deeppink;
+        border-radius: 1rem;
+      }
+
+      @media (max-width: 990px) {
+        .ex-container {
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <div
+          class="section-title animate-characters"
+          data-type="file"
+          data-audio="./sounds/st-1.mp3">
+          <h3>Tu as mal où ?</h3>
+        </div>
+        <div class="dialogue-container">
+          <div class="text" data-type="file" data-audio="./sounds/box-2.mp3">
+            Avoir mal <span>( à la – au – aux – à l’ )</span>+les parties du
+            corps
+          </div>
+          <div class="box">
+            <div
+              class="section-title animate-characters"
+              data-type="file"
+              data-audio="./sounds/title-2.mp3">
+              V Avoir
+            </div>
+            <div
+              class="ex-container"
+              data-type="file"
+              data-audio="./sounds/box-2.mp3">
+              <div class="ex">J’ ai</div>
+              <div class="ex">nous avons</div>
+              <div class="ex">Tu as</div>
+              <div class="ex">vous avez</div>
+              <div class="ex">Il, Elle, on a</div>
+              <div class="ex">Ils/Elles ont</div>
+            </div>
+          </div>
+          <img
+            src="./imgs/1.png"
+            alt="Ex"
+            class="image-size"
+            data-type="file"
+            data-audio="./sounds/1.mp3" />
+          <img
+            src="./imgs/2.png"
+            alt="Ex"
+            class="image-size"
+            data-type="file"
+            data-audio="./sounds/2.mp3" />
+          <img
+            src="./imgs/3.png"
+            alt="Ex"
+            class="image-size"
+            data-type="file"
+            data-audio="./sounds/3.mp3" />
+          <img
+            src="./imgs/4.png"
+            alt="Ex"
+            class="image-size"
+            data-type="file"
+            data-audio="./sounds/4.mp3" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="navigation">
+        <a href="../page54/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../../index.html" class="home-btn">
+          <img src="../../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../page56/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../../master.js"></script>
+  </body>
+</html>
