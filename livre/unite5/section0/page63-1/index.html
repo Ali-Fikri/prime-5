@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 5 - Les aventures des vacances !</title>
+    <link rel="stylesheet" href="../../../../styles/Choices.css" />
+    <link rel="stylesheet" href="../../../../master.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <div
+          class="section-title"
+          data-type="file"
+          data-audio="./sounds/title.mp3">
+          <h2 class="animate-characters">B- Choisis la bonne réponse :</h2>
+        </div>
+        <section class="question-container">
+          <div class="question">
+            1. Où Julika va-t-elle passer ses vacances ?
+            <div class="choices">
+              <span class="choice" isCorrect="false">a) À la campagne</span>
+              <span class="choice" isCorrect="true">b) À la piscine</span>
+              <span class="choice" isCorrect="false">c) Au zoo</span>
+            </div>
+          </div>
+          <div class="question">
+            2. Quel animal Tamara a-t-elle hâte de voir au zoo ?
+            <div class="choices">
+              <span class="choice" isCorrect="false">a) Les éléphants</span>
+              <span class="choice" isCorrect="false">b) Les ours</span>
+              <span class="choice" isCorrect="true">c) Les lions</span>
+            </div>
+          </div>
+          <div class="question">
+            3. Pourquoi Jad aime la campagne ?
+            <div class="choices">
+              <span class="choice" isCorrect="true"
+                >a) Parce qu’il y a des champs et des animaux</span
+              >
+              <span class="choice" isCorrect="false"
+                >b) Parce qu’il y a beaucoup de bruit</span
+              >
+              <span class="choice" isCorrect="false"
+                >c) Parce qu’il y a des plages</span
+              >
+            </div>
+          </div>
+          <img src="./1.png" alt="Image" />
+        </section>
+      </div>
+    </div>
+    <audio
+      id="clapSound"
+      src="../../../../sounds/clap.mp3"
+      preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../page63/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../../index.html" class="home-btn">
+          <img src="../../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../page64/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../../scripts/choicesQuestion.js"></script>
+  </body>
+</html>
