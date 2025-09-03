@@ -1,0 +1,116 @@
+body {
+  background-image: url("./imgs/back.png");
+  background-size: cover;
+}
+
+.board {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 3rem 3rem;
+  margin: 1.5rem auto;
+  border: 0.625rem solid #df5b2c;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-title {
+  width: 100%;
+  position: relative;
+  padding: 3rem;
+  font-size: 1.8rem;
+  color: #df5b2c;
+}
+
+#headset {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+  top: 2rem;
+  left: 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.col {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input {
+  display: inline;
+  width: 4rem;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #df5b2c;
+  border-radius: 0.5rem;
+  color: #df5b2c;
+  font-size: 2rem;
+}
+
+.correct {
+  color: green;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.shake {
+  animation: shake 1s;
+  -webkit-animation: shake 1s;
+}
+
+@media (max-width: 990px) {
+  .board {
+    padding: 2rem 0.5rem;
+  }
+  .section-title {
+    font-size: 0.8rem;
+    padding: 2rem 0;
+  }
+  #headset {
+    width: 3rem;
+  }
+
+  .row {
+    font-size: 1rem;
+  }
+
+  .col {
+    width: 47%;
+  }
+
+  .input {
+    width: 3rem;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+}
