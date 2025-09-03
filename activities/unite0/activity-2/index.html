@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 0 - Les gens que j’aime !</title>
+    <link rel="stylesheet" href="../../../master.css" />
+    <link rel="stylesheet" href="../../../styles/drag.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <div
+          class="section-title"
+          data-type="file"
+          data-audio="./sounds/title.mp3">
+          <h2 class="animate-characters">
+            Activité (2) Observe la photo puis présente ta famille:
+          </h2>
+          <img id="headset" src="../../../imgs/headset.png" alt="Headset" />
+        </div>
+
+        <div class="answer-container">
+          <div class="question-item">
+            Moi , je m’appelle<input
+              type="text"
+              id="answerInput"
+              data-answer="jean"
+              placeholder="Entrez votre réponse" />
+            J’ai
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="douze"
+              placeholder="Entrez votre réponse" />ans . Mon père est
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="médecin"
+              placeholder="Entrez votre réponse" />
+            ma mère est
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="journaliste"
+              placeholder="Entrez votre réponse" />, j ‘ai
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="deux"
+              placeholder="Entrez votre réponse" />
+            frère et une
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="soeur"
+              placeholder="Entrez votre réponse" />
+            Mon grand-père est
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="journaliste"
+              placeholder="Entrez votre réponse" />et Mon père porte des
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="lunettes"
+              placeholder="Entrez votre réponse" />.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="clapSound" src="../../../sounds/clap.mp3" preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../activity-1/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../index.html" class="home-btn">
+          <img src="../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../activity-3/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../master.js"></script>
+    <script src="../../../scripts/writeQustion.js"></script>
+  </body>
+</html>
