@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 2 - C’est bizarre!</title>
+    <link rel="stylesheet" href="../../../master.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="letters-container">
+        <section class="section">
+          <div
+            class="section-title"
+            data-type="file"
+            data-audio="./sounds/title.mp3">
+            <h2 class="animate-characters">Activité (5) Mets en ordre:</h2>
+            <img id="headset" src="../../../imgs/headset.png" alt="Headset" />
+          </div>
+
+          <div class="sentences">
+            <!-- 1 -->
+            <div
+              class="sentence"
+              data-ordered="De quelle couleur est ton drapeau?">
+              <div class="words-bank">
+                <div class="word" draggable="true">couleur</div>
+                <div class="word" draggable="true">drapeau?</div>
+                <div class="word" draggable="true">De quelle</div>
+                <div class="word" draggable="true">ton</div>
+                <div class="word" draggable="true">est</div>
+              </div>
+              <div class="drop-zone"></div>
+              <div class="result"></div>
+            </div>
+
+            <!-- 2 -->
+            <div class="sentence" data-ordered="Je suis anglaise et toi?">
+              <div class="words-bank">
+                <div class="word" draggable="true">toi ?</div>
+                <div class="word" draggable="true">suis</div>
+                <div class="word" draggable="true">Je</div>
+                <div class="word" draggable="true">et</div>
+                <div class="word" draggable="true">anglaise ,</div>
+              </div>
+              <div class="drop-zone"></div>
+              <div class="result"></div>
+            </div>
+
+            <!-- 3 -->
+            <div
+              class="sentence"
+              data-ordered="Elle vient de Chine, elle est chinoise.">
+              <div class="words-bank">
+                <div class="word" draggable="true">vient</div>
+                <div class="word" draggable="true">est</div>
+                <div class="word" draggable="true">Elle</div>
+                <div class="word" draggable="true">Chine,</div>
+                <div class="word" draggable="true">chinoise.</div>
+                <div class="word" draggable="true">de</div>
+                <div class="word" draggable="true">elle</div>
+              </div>
+              <div class="drop-zone"></div>
+              <div class="result"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <audio
+        id="clapSound"
+        src="../../../sounds/clap.mp3"
+        preload="auto"></audio>
+      <audio
+        id="inCorrectSound"
+        src="../../../sounds/incorrect.mp3"
+        preload="auto"></audio>
+
+      <footer>
+        <div class="navigation">
+          <a href="../activity-4/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../../imgs/previous.png" alt="Previous" />
+            </div>
+          </a>
+
+          <a href="../../../index.html" class="home-btn">
+            <img src="../../../imgs/home.png" width="130" alt="Home" />
+          </a>
+
+          <a href="../activity-6/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../../imgs/next.png" alt="next" />
+            </div>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../../../scripts/handleMatch.js"></script>
+    <script src="../../../../master.js"></script>
+  </body>
+</html>
