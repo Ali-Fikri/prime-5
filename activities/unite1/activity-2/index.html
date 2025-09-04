@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 1 - Autour du monde</title>
+    <link rel="stylesheet" href="../../../master.css" />
+    <link rel="stylesheet" href="../../../styles/drag.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <div
+          class="section-title"
+          data-type="file"
+          data-audio="./sounds/title.mp3">
+          <h2 class="animate-characters">
+            Activité (2) Complète avec la conjuguaison de v. (venir) et la
+            préposition
+          </h2>
+          <img id="headset" src="../../../imgs/headset.png" alt="Headset" />
+        </div>
+        <div
+          class="section-title"
+          data-type="file"
+          data-audio="./sounds/title.mp3">
+          <h3 class="animate-characters">(de / d’ / du / des )</h3>
+        </div>
+
+        <div class="answer-container">
+          <div class="question-item">
+            1- Pauline<input
+              type="text"
+              id="answerInput"
+              data-answer="vient des"
+              placeholder="Entrez votre réponse" />
+            États-Unis.
+          </div>
+          <div class="question-item">
+            2- Moi , je
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="viens d'"
+              placeholder="Entrez votre réponse" />
+            Égypte.
+          </div>
+          <div class="question-item">
+            3- Tu
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="viens de"
+              placeholder="Entrez votre réponse" />
+            Russie.
+          </div>
+          <div class="question-item">
+            4- Amélie
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="vient du"
+              placeholder="Entrez votre réponse" />
+            Maroc.
+          </div>
+          <div class="question-item">
+            5- Elle
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="vient de"
+              placeholder="Entrez votre réponse" />
+            France.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="clapSound" src="../../../sounds/clap.mp3" preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../activity-1/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../index.html" class="home-btn">
+          <img src="../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../activity-3/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../master.js"></script>
+    <script src="../../../scripts/writeQustion.js"></script>
+  </body>
+</html>
