@@ -21,22 +21,6 @@
   width: 100%;
 }
 
-.section-title {
-  width: 100%;
-  position: relative;
-  padding: 3rem;
-  font-size: 1.8rem;
-  color: #df5b2c;
-}
-
-#headset {
-  position: absolute;
-  width: 5rem;
-  height: auto;
-  top: 2rem;
-  left: 0;
-}
-
 .row {
   display: flex;
   justify-content: space-between;
