@@ -1,0 +1,148 @@
+.section {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 0 !important;
+}
+
+.letters-container {
+  padding: 4rem 6rem;
+  margin-bottom: 2.5rem;
+  border: 0.625rem solid #df5b2c;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.section-title {
+  width: 100%;
+  position: relative;
+  padding: 3rem;
+  font-size: 1.8rem;
+  color: #df5b2c;
+}
+
+#headset {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+  top: 2rem;
+  left: 0;
+}
+
+.sentences {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.sentence {
+  font-family: cursive;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.sentence:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+.words-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.drop-zone {
+  min-height: 60px;
+  width: auto;
+  background-color: white;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.drop-zone.over {
+  background-color: #f9fbff;
+}
+
+.word {
+  background-color: #e7f0ff;
+  border: 1px solid #a5c3ff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: grab;
+  font-size: 2rem !important;
+  transition: background 0.2s ease;
+}
+
+.word:active {
+  cursor: grabbing;
+}
+
+.word {
+  background: #f0f5ff;
+  border: 2px solid #cddfff;
+  color: #2a3d66;
+  padding: 10px 14px;
+  margin: 8px 6px 8px 0;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: grab;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.word:active {
+  transform: scale(1.05);
+  cursor: grabbing;
+}
+
+.result {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.correct {
+  color: #28a745;
+}
+
+.incorrect {
+  color: #e53935;
+}
+
+@media (max-width: 990px) {
+  .section-title {
+    font-size: 1rem;
+    padding: 2rem 0;
+  }
+  #headset {
+    width: 3rem;
+    left: -8%;
+  }
+
+  .letters-container {
+    padding: 1rem;
+  }
+
+  .sentence .word {
+    font-size: 1rem !important;
+  }
+
+  .result {
+    font-size: 3rem;
+  }
+  .drop-zone {
+    min-height: 100px;
+  }
+}
