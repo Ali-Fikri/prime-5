@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unité 3 - Quel métier?</title>
+    <link rel="stylesheet" href="../../../styles/Choices.css" />
+    <link rel="stylesheet" href="../../../master.css" />
+    <link rel="stylesheet" href="../../../styles/drag.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <div class="section-title">
+          <h2 class="animate-characters">
+            Activité (5) Lis le texte puis réponds aux questions:
+          </h2>
+        </div>
+        <section class="question-container">
+          <div class="text">
+            Paul est un infirmier dans un hôpital. Il travaille tous les jours
+            pour aider les médecins et soigner les patients. Il aime son métier
+            parce qu’il aime aider les autres. À l’hôpital, il y a aussi des
+            médecins qui font des opérations, des pharmaciens qui donnent des
+            médicaments et des secrétaires qui organisent les rendez-vous. Son
+            ami Lucas est pompier et il sauve des gens en cas d’incendie. Sa
+            soeur, Marie, est enseignante et elle donne des cours aux enfants.
+            Chacun a un métier différent, mais tous sont importants pour la
+            société.
+          </div>
+          <div class="question">
+            1. Lucas est ………….
+            <div class="choices">
+              <span class="choice" isCorrect="true">a) Pompier</span>
+              <span class="choice" isCorrect="false">b) fermier</span>
+            </div>
+          </div>
+          <div class="question">
+            2. …………… enseigne aux enfants .
+            <div class="choices">
+              <span class="choice" isCorrect="false">a) Paul</span>
+              <span class="choice" isCorrect="true">b) Marie</span>
+            </div>
+          </div>
+          <div class="question">
+            3. Le pharmacien donne des ……………
+            <div class="choices">
+              <span class="choice" isCorrect="false">a) opérations</span>
+              <span class="choice" isCorrect="true">b) médicaments</span>
+            </div>
+          </div>
+          <div class="question-item">
+            4. Quel est le métier de Paul ?
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="Il est infirmier"
+              placeholder="Entrez votre réponse" />
+          </div>
+          <div class="question-item">
+            5. Pourquoi aime-t-il son travail ?
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="Parce qu'il aime aide les autres."
+              placeholder="Entrez votre réponse" />
+          </div>
+          <div class="question-item">
+            6. Quels autres métiers sont mentionnés dans le texte ?
+            <input
+              type="text"
+              id="answerInput"
+              data-answer="pharmacien - enseignant - médecin - secrétaire"
+              placeholder="Entrez votre réponse" />
+          </div>
+        </section>
+      </div>
+    </div>
+    <audio id="clapSound" src="../../../sounds/clap.mp3" preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../activity-4/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../index.html" class="home-btn">
+          <img src="../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../activity-6/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../scripts/choicesQuestion.js"></script>
+  </body>
+</html>
