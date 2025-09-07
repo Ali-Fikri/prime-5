@@ -50,6 +50,10 @@ span {
   img {
     width: 100%;
   }
+
+  .question-image {
+    width: 10rem;
+  }
 }
 
 .correct {
