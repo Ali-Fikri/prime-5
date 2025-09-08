@@ -19,6 +19,12 @@
   margin-bottom: 2rem;
 }
 
+.text {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .answer-container {
   width: 100%;
   font-size: 1.6rem;
@@ -96,11 +102,7 @@
   .board {
     padding: 2rem 0.5rem;
   }
-  .section-title {
-    font-size: 0.8rem;
-    padding: 2rem 0;
-  }
-  #headset {
-    width: 3rem;
+  .text {
+    font-size: 1.4rem;
   }
 }
